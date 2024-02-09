@@ -1,5 +1,36 @@
 *{
   box-sizing: border-box;
+}
+
+body{
   padding: 0;
   margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(164,69,252,1) 42%, rgba(207,69,252,1) 72%);
+  color: white;
+  height:90px;
+  padding: 20px;
+
+}
+
+.header-img{
+  margin-right: 10px;
+  height:80px;
+}
+
+.header-title{
+  margin-right: auto;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.header h3{
+  font-size: 1rem;
+  margin-right: 20px;
+  letter-spacing: 1px;
 }
