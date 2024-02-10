@@ -13,14 +13,14 @@ body{
   align-items: center;
   background: linear-gradient(90deg, rgba(164,69,252,1) 42%, rgba(207,69,252,1) 72%);
   color: white;
-  height:90px;
+  height:70px;
   padding: 20px;
 
 }
 
 .header-img{
   margin-right: 10px;
-  height:80px;
+  height:60px;
 }
 
 .header-title{
@@ -33,4 +33,35 @@ body{
   font-size: 1rem;
   margin-right: 20px;
   letter-spacing: 1px;
+}
+
+.main{
+  padding:20px;
+}
+
+.form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap:16px;
+}
+
+.form-input{
+  font-family: 'Karla', sans-serif;
+  text-indent: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: 1rem;
+}
+
+.form-button{
+  grid-column: 1 / -1;
+  width:30%;
+  margin: 0 auto;
+  
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(164,69,252,1) 42%, rgba(207,69,252,1) 72%);
+  color:white;
+  border: none;
+  border-radius: 5px;
 }
