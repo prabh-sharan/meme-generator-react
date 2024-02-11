@@ -11,10 +11,23 @@ export default function Meme(){
     // for array of all memes
     const [allMemes, setAllMemes] = React.useState([]); 
 
+
+    /*async function automatically returns a promise instead of a function or nothing.
+    So, if we use async inside of useEffect,we need to define the function separately 
+    inside of the call-back function */
+    React.useEffect( () =>{
+        async function getMemes() {
+            const res = await fetch("https://api.imgflip.com/get_memes"); // imgflip API for memes
+            const data = await res.json() ; //conv it to json 
+            setAllMemes(data.data.memes);
+        }
+        getMemes();  //callback
+    },[]);
+
     function getMemeImage(){
         // gen random num
         const randomNum = Math.floor(Math.random() * allMemes.length);
-        const url = meme[randomNum].url;  
+        const url = allMemes[randomNum].url;  
         //updating state with new url
         setMeme(prevMeme => ({
             ...prevMeme,
