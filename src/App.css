@@ -30,12 +30,6 @@ body {
   letter-spacing: 1px;
 }
 
-.header h3 {
-  font-size: 1rem;
-  margin-right: 20px;
-  letter-spacing: 1px;
-}
-
 .header-icon{
   width:50%;
 }
@@ -134,4 +128,33 @@ body {
 
 .bottom {
   bottom: 0;
+}
+
+/* media queries */
+@media screen and ( max-width:850px ){
+
+  .header{
+    height: 95px;
+    width:100%;
+    margin-bottom: 12px;
+  }
+  .form-button{
+    width:60%;
+  }
+  .meme{
+    position: relative;
+    left:12em;
+  }
+
+}
+
+@media screen and ( max-width:500px ){
+  .header{
+    margin-bottom: 10px;
+  }
+  .meme{
+    position: relative;
+    left:7em;
+  }
+
 }
