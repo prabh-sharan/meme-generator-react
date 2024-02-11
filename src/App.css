@@ -8,6 +8,7 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
+/* Header */
 .header {
   display: flex;
   align-items: center;
@@ -35,7 +36,11 @@ body {
   letter-spacing: 1px;
 }
 
+.header-icon{
+  width:50%;
+}
 
+/* form input */
 .form {
   display: grid;
   grid-template: 48px 48px / 1fr 1fr;
@@ -82,6 +87,7 @@ body {
   margin-top: 10px;
 }
 
+/* Meme img */
 .meme {
   position: relative;
   left:21em;
