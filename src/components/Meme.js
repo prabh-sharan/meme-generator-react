@@ -1,8 +1,9 @@
 import React from "react";
+import ReactDOM from "react";
 
 export default function Meme(){
 
-    // current meme
+    // current meme state
     const [meme, setMeme] = React.useState({
         topText :"",
         bottomText :"",
@@ -35,19 +36,35 @@ export default function Meme(){
         }))
     }
 
+    // input change event
+    function handleInputChange(event){
+        const {name, value} = event.target;
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            [name]: value
+        }))
+    }
+
     return(
         <div className="form">
                 <div className="label">
-                    <label className="form-label">Top text</label>
-                    <input className="form-input" 
-                           placeholder="Shut up" 
-                           type="text" />
+                    <label className ="form-label">Top text</label>
+                    <input className = "form-input" 
+                           placeholder ="Shut up" 
+                           type ="text"
+                           name ="topText"
+                           value = {meme.topText}
+                           onChange = {handleInputChange} />
                 </div>
 
                 <div className="label">
-                    <label className="form-label">Bottom text</label>
-                    <input className="form-input" 
-                           placeholder="and take my money" type="text" />
+                    <label className ="form-label">Bottom text</label>
+                    <input className ="form-input" 
+                           placeholder ="and take my money"
+                           type ="text"
+                           name = "bottomText"
+                           value = {meme.bottomText}
+                           onChange = {handleInputChange} />
                 </div>
 
                 <button 
