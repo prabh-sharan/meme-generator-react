@@ -1,3 +1,8 @@
+# Overview
+This is a simple meme generator React project which pulls data from [ImgFlipAPI](https://imgflip.com/api) .
+Users can generate hundreds of most popular meme templates and add personlized text to it.<br>
+Live Link : [Meme Generator](https://meme-generator-react-wine.vercel.app/)
+ 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
